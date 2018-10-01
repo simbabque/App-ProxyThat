@@ -25,7 +25,7 @@ App::ProxyThat->new->run;
 =head1 DESCRIPTION
 
 This utility starts a L<Plack> based proxy server that forwards requests
-to one URL. I can create a throw-away SSL certificate and run over https,
+to one URL. It can create a throw-away SSL certificate and run over https,
 which makes it easy to provide encrypted endpoints for local development
 if your frontend has to run on https.
 
