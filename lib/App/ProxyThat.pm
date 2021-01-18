@@ -1,8 +1,5 @@
 package App::ProxyThat;
 
-# DATE
-# VERSION
-
 use strict;
 use warnings;
 use Getopt::Long qw(:config pass_through);
@@ -11,6 +8,8 @@ use Plack::App::Proxy;
 use Plack::Builder;
 use Plack::Runner;
 use File::chdir;
+
+our $VERSION = '0.02';
 
 sub new {
     my $class = shift;
@@ -95,7 +94,7 @@ sub _server_ready {
 =head1 SYNOPSIS
 
     # Do not use directly. See the proxy_that command!
-    
+
 =head1 DESCRIPTION
 
 =head1 METHODS
@@ -113,7 +112,7 @@ Start the HTTP server.
 
 =over 4
 
-=item * L<Plack>, L<Plack::App::Proxy> 
+=item * L<Plack>, L<Plack::App::Proxy>
 
 =back
 
