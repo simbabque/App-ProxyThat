@@ -2,7 +2,7 @@
 
 package
     proxy_that;
-    
+
 use strict;
 use warnings;
 use App::ProxyThat;
@@ -15,10 +15,13 @@ App::ProxyThat->new->run;
 
     ## Rnu a proxy to https://example.org on http://localhost:3080
     $ proxy_that https://example.org
-    
+
+    ## Proxy port 80 on your virtual machine to your local port 80
+    # sudo proxy_that --port 80 http://vm.local.example.org
+
     ## Show documentation about our options
     $ proxy_that --help
-    
+
     ## Show the entire man page
     $ proxy_that --man
 
