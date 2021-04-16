@@ -24,6 +24,8 @@ sub new {
         or pod2usage(2);
 
     if ( $self->{ssl} ) {
+        require AppLib::CreateSelfSignedSSLCert;
+        require File::Temp;
         my $dir = File::Temp::tempdir( CLEANUP => 1 );
         local $CWD = $dir;
         my $res = AppLib::CreateSelfSignedSSLCert::create_self_signed_ssl_cert(
