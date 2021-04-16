@@ -42,7 +42,7 @@ Does not change the default port.
 
 =item --port PORT
 
-Start the HTTP server ona specific C<PORT>. Default is 3080.
+Start the HTTP server on a specific C<PORT>. Default is 3080.
 
 =item --help
 
