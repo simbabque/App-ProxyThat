@@ -98,6 +98,8 @@ sub _server_ready {
     
 =head1 DESCRIPTION
 
+See the L<proxy_that> command for an example of how to use this module.
+
 =head1 METHODS
 
 =head2 new
