@@ -13,7 +13,7 @@ App::ProxyThat->new->run;
 
 =head1 SYNOPSIS
 
-    ## Rnu a proxy to https://example.org on http://localhost:3080
+    ## Run a proxy to https://example.org on http://localhost:3080
     $ proxy_that https://example.org
 
     ## Proxy port 80 on your virtual machine to your local port 80
